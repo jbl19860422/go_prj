@@ -8,7 +8,7 @@ import (
 )
 
 func handleConnection(conn net.Conn) {
-	var data []byte = make([]byte, 5, 10)
+	var data []byte = make([]byte, 1024, 1024)
 	defer conn.Close()
 	conn.SetReadDeadline(time.Now().Add(time.Duration(10) * time.Second)) // 100ms
 	_, err := conn.Read(data)

@@ -1,3 +1,6 @@
 build/
 bin/
 pkg/
+client
+server
+test_interface
