@@ -30,6 +30,10 @@ func (this *Apple) GetName() string {
 	return "apple"
 }
 
+func (this Apple) GetName() string {
+	return "apple"
+}
+
 // func (this Apple) GetName() string {
 // 	return "apple"
 // }
